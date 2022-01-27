@@ -1,0 +1,87 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Аплікаційна форма для учасниць онлайн-заходу "Можливості в ІТ"</h1>
+    <p id="description" class="description text-center">
+      Дякуємо, що взяли участь в опитуванні!
+      </p>
+        </header>
+  <form id="реєстраційна форма">
+    <div-class="form-group">
+      <label id="name-label"
+             for="name">Ім'я</label>
+      <input
+             type="text"
+             name="name"
+             id="name"
+             clas="form-control"
+             placeholder="Напишіть своє ім'я"
+             required
+             />
+      </div>
+    <div class="form group">
+      <label id="email-label"
+             for="email">Електронна пошта</ladel>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Вкажіть свій імейл"
+        required
+      />
+   </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Вік<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Вік"
+      />
+      </div>
+    <div class="form-group">
+      <p>Як ти можеш описати зараз свою діяльність?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Вибери свою діяльність</option>
+        <option value="student">Student</option>
+        <option value="job">Працюю</option>
+        <option value="learner">Працюю і навчаюсь</option>
+        <option value="preferNo">Не хочу відповідати</option>
+        <option value="other">Інше</option>
+      </select>
+    </div>
+ 
+    <div class="form-group">
+      <p>
+        Які твої знання про ІТ-сферу?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Вибери один з варіантів</option>
+        <option value="поверхневі">Поверхневі</option>
+        <option value="знаю назви деяких мов програмування">Знаю назви деяких мов програмування</option>
+        <option value="вчу деякі мови">Вчу деякі мови</option>
+        <option value="нульові">Нульові</option>
+      </select>
+    </div>
+<div class="form-group">
+      <p>Додаткові коментарі чи пропозиції</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Залиш свій коментар тут..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Надіслати
+      </button>
+    </div>
+  </form>
+</div>
